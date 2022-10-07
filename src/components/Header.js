@@ -77,6 +77,22 @@ const Header = (props) => {
                 className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none locations-wrapper"
               >
                 <div className="py-1">
+                <Menu.Item>
+                    {({ active }) => (
+                      <button
+                        type="button"
+                        onClick={() => setLocation("Shimoga")}
+                        className={classNames(
+                          active
+                            ? "bg-gray-100 text-gray-900"
+                            : "text-gray-700",
+                          "block px-20 py-3 text-sm"
+                        )}
+                      >
+                        Shimoga
+                      </button>
+                    )}
+                  </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
                       <button
