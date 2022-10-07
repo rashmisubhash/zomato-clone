@@ -81,7 +81,7 @@ const Header = (props) => {
                     {({ active }) => (
                       <button
                         type="button"
-                        onClick={() => setLocation("Shimoga")}
+                        onClick={() => setLocation("Shimogas")}
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -89,7 +89,7 @@ const Header = (props) => {
                           "block px-20 py-3 text-sm"
                         )}
                       >
-                        Shimoga
+                        Shimogas
                       </button>
                     )}
                   </Menu.Item>
